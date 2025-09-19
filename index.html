@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,21 +16,22 @@
 <h1> AI Poem Generator</h1>
     </header>
     <main>
-        <form>
+        <div class="form-container">
+        <form id="poem-generator-form">
             <input type="text"
             placeholder="Enter the topic of your poem"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+             id="user-instructions"
             />
            <input type="submit" class="submit-button"> 
         </form>
-          <div class="poem">
-        Invisible bats trace frescoes
-        <br />
-        On these walls of explosive silence
-      </div>
+         <div class="hint">i.e: corruption, Kenya or Wantam</div>
+          </div>
+          <div class="poem" id="poem"></div>
+     
     </main>
     <footer>
         This project was coded by <a href="https://github.com/Melloniah" target="_blank">Mellon</a> and it is open sourced on <a href="https://github.com/Melloniah/AI-Poem-Generator" target="blank"> Github</a>
